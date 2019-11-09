@@ -2,23 +2,19 @@ body{
     margin: 0px;
     background-color: antiquewhite;
     font-family: 'Montserrat', sans-serif;
+    height: 100%;
 }
 .parallax{
+    height: 100vh;
 
-    background: url("../images/bg.jpg");
-    height: 900px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
 }
 #content{
     text-align: center;
     color: white;
-    padding-top: 15%;;
+    padding-top: 15%;
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-                 0px 18px 23px rgba(0,0,0,0.1);
+              0px 18px 23px rgba(0,0,0,0.1);
 }
 .parallax h1{
     font-size: 5em;
@@ -168,26 +164,25 @@ button:focus {
     font-size: 1.3rem;
     font-weight: 200;
 }
-#mainNavbar{
+.mainNavbar{
     width: 100%;
-    padding: 15px;
+    padding: 20px;
     position: fixed;
+    font-size: 1.5rem;
     transition: 0.5s;
-
 }
-#mainNavbar a{
+.mainNavbar a{
     color: white;
-    font-size: 20px;
     text-decoration-line: none;
-    
 }
 .scrolled{
     background: black ;
-    transition: 1s;  
+    transition: 0.5s;  
+    font-size: 1.2rem;
+    padding: 15px;
 }
 
 .menu{
-    font-size:20px;
     cursor:pointer;
     color: white; 
     float:right;
@@ -227,4 +222,109 @@ button:focus {
     font-size: 36px;
     margin-left: 50px;
   }
-  
+
+ 
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+
+
+.mySlides {
+  display: none;
+}
+.slide1{
+  background: url("../images/slide01.jpg");
+  background-size: cover; 
+  background-attachment: fixed;
+
+}
+.slide2{
+  background: url("../images/slide02.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.slide3{
+  background: url("../images/slide03.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.slide4{
+  background: url("../images/slide04.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.slide5{
+  background: url("../images/slide05.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  bottom: 0;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1};
+}
